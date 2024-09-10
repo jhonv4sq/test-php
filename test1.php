@@ -8,16 +8,16 @@ function sequence ($array) {
     foreach ($array as $number) {
         if(!isset($numSet[$number - 1])) {
             $current = $number;
-            $CurrentSequence = [$current];
+            $currentSequence = [$current];
 
             while (isset($numbers[$current + 1])) {
                 $current++;
-                $CurrentSequence[] = $current;
+                $currentSequence[] = $current;
             }
-            $currentSequencelength = count($CurrentSequence);
+            $currentSequencelength = count($currentSequence);
             if ($currentSequencelength > $maxLength) {
                 $maxLength = $currentSequencelength;
-                $sequence = $CurrentSequence;
+                $sequence = $currentSequence;
             }
         }    
     }
