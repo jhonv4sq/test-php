@@ -14,9 +14,9 @@ function sequence ($array) {
                 $current++;
                 $currentSequence[] = $current;
             }
-            $currentSequencelength = count($currentSequence);
-            if ($currentSequencelength > $maxLength) {
-                $maxLength = $currentSequencelength;
+            $currentSequenceLength = count($currentSequence);
+            if ($currentSequenceLength > $maxLength) {
+                $maxLength = $currentSequenceLength;
                 $sequence = $currentSequence;
             }
         }    
